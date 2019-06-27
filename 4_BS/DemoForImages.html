@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.src.js"></script>
+    <![endif]-->
+    <style>
+        body{
+            padding:10px;
+        }
+        .thumbnail > img
+        {
+            -webkit-transition:all 2s ease-in-out;
+        }
+        
+         .thumbnail > img:hover {
+            -webkit-transform: rotate(-5deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 thumbnail">
+                <img src="up/1.jpg" class="img-circle"/>
+                <p class="text-center text-success">Image One</p>
+            </div>
+            <div class="col-xs-3 thumbnail">
+                <img src="up/1.jpg" class="img-circle" />
+                <p class="text-center text-danger">Image Two</p>
+            </div>
+            <div class="col-xs-3 thumbnail">
+                <img src="up/1.jpg" class="img-circle" />
+                <p class="text-center text-info">Image Three</p>
+            </div>
+            <div class="col-xs-3 thumbnail">
+                <img src="up/1.jpg" class="img-circle" />
+                <p class="text-center">Image Four</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

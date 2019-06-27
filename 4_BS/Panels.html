@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.src.js"></script>
+    <![endif]-->
+    <style>
+        body{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       <!--<div class="row">
+           <button class="btn btn-primary" data-toggle="collapse" data-target="#panelone">Toggle Panel</button>
+       </div>-->
+        <div class="panel-group" id="panelparent">
+
+
+
+            <div class="panel">
+                <div class="panel-heading">
+                    <!--<p class="lead text-center text-success">Panel One</p>-->
+                    <a class="text-success" data-toggle="collapse" data-target="#panelone" data-parent="#panelparent">PanelOne</a>
+                </div>
+                <div class="collapse in" id="panelone">
+                    <div class="panel-body text-center bg-success">
+                        <img class="img-circle" src="up/1.jpg" />
+                        <img class="img-circle" src="up/1.jpg" />
+                        <img class="img-circle" src="up/1.jpg" />
+                    </div>
+                    <div class="panel-footer text-success text-center">
+                        <p>CopyRights &copy; Reserved to Matrouh Students</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="panel">
+                <div class="panel-heading">
+                    <!--<p class="lead text-center text-success">Panel One</p>-->
+                    <a class="text-success" data-toggle="collapse" data-target="#paneltwo" data-parent="#panelparent">PanelTwo</a>
+                </div>
+                <div class="collapse" id="paneltwo">
+                    <div class="panel-body text-center bg-danger">
+                        <img class="img-circle" src="up/1.jpg" />
+                        <img class="img-circle" src="up/1.jpg" />
+                        <img class="img-circle" src="up/1.jpg" />
+                    </div>
+                    <div class="panel-footer text-success text-center">
+                        <p>CopyRights &copy; Reserved to Matrouh Students</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="panel">
+                <div class="panel-heading">
+                    <!--<p class="lead text-center text-success">Panel One</p>-->
+                    <a class="text-success" data-toggle="collapse" data-target="#panelthree" data-parent="#panelparent">PanelThree</a>
+                </div>
+                <div class="collapse" id="panelthree">
+                    <div class="panel-body text-center bg-warning">
+                        <img class="img-circle" src="up/1.jpg" />
+                        <img class="img-circle" src="up/1.jpg" />
+                        <img class="img-circle" src="up/1.jpg" />
+                    </div>
+                    <div class="panel-footer text-success text-center">
+                        <p>CopyRights &copy; Reserved to Matrouh Students</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
