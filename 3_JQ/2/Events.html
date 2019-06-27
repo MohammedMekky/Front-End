@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JQ/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+            //$("li").click(function () {
+
+            //    $(this).css("color", "red");
+
+            //});
+
+            //$("li").mouseover(function () {
+
+            //    $(this).css("background-color", "cyan");
+
+            //});
+
+            //$("li").dblclick(function () {
+            //    $(this).remove();
+            //    //$(this).css("background-color", "cyan");
+
+            //});
+
+
+
+
+
+            // using chaining
+
+            $("li").click(function () {
+
+                $(this).css("color", "red");
+
+            }).mouseover(function () {
+
+                $(this).css("background-color", "cyan");
+
+            }).dblclick(function () {
+                $(this).remove();
+                //$(this).css("background-color", "cyan");
+
+            });
+
+
+
+
+
+
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        
+    </ul>
+</body>
+</html>
+

@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JQ/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+            // general selectors ID , Class , * , tag name , group 
+            //1- tag name selector
+            //$("div").css("background-color", "lightpink");
+            //$("div:even").css({
+            //    width: "500",
+            //    height: "100",
+            //    border: "2px solid black",
+            //    backgroundColor: "lightyellow",
+            //    marginTop:"10"
+            //});
+
+
+            //$("li:nth-child(1)").css({
+            //    //width: "500",
+            //    //height: "100",
+            //    border: "2px solid black",
+            //    backgroundColor: "lightyellow",
+            //    padding:"10px"
+            //});
+
+
+            //$("li:gt(3)").css({
+            //    //width: "500",
+            //    //height: "100",
+            //    border: "2px solid black",
+            //    backgroundColor: "lightyellow",
+            //    padding: "10px"
+            //});
+
+
+            // attribute selector
+            //$("input[id]").css({
+            //    //width: "500",
+            //    //height: "100",
+            //    border: "2px solid black",
+            //    backgroundColor: "lightyellow",
+            //    padding: "10px"
+            //});
+
+            // negation pesudo classs selector [negation filter :not()]
+            //$("input:not(input[id])").css({
+            //    //width: "500",
+            //    //height: "100",
+            //    border: "2px solid black",
+            //    backgroundColor: "lightyellow",
+            //    padding: "10px"
+            //});
+
+            //$(":text").css({
+            //    //width: "500",
+            //    //height: "100",
+            //    border: "2px solid black",
+            //    backgroundColor: "lightyellow",
+            //    padding: "10px"
+            //});
+
+            // has and contains
+
+            //$("div:has(p)").css({
+            //    //width: "500",
+            //    //height: "100",
+            //    border: "2px solid black",
+            //    backgroundColor: "lightyellow",
+            //    padding: "10px"
+            //});
+
+
+
+            $("p:contains(Mansoura)").css({
+                //width: "500",
+                //height: "100",
+                border: "2px solid black",
+                backgroundColor: "lightyellow",
+                padding: "10px"
+            });
+
+
+
+
+
+
+
+            //p[id]=>p contains attribute id
+
+
+
+        });
+    </script>
+
+</head>
+<body>
+    <!--<p>Dummy Text-</p>-->
+    <p>Matrouh City</p>
+    <p>Mansoura City</p>
+    <div id="divone">
+        <p>Matrouh City</p>
+    </div>
+    <div></div>
+    <!--<div></div> [width=100%,height=0]
+    <div/> [height=0,width=0]-->
+    <div id="divtwo">
+        <span>Matrouh Library</span>
+    </div>
+
+
+
+    <table>
+        <tr>
+            <td>Matrouh TR one</td>
+        </tr>
+        <tr>
+            <td>Matrouh TR Two</td>
+        </tr>
+        <tr>
+            <td>Matrouh TR Three</td>
+        </tr>
+    </table>
+
+    
+
+    <ol>
+        <li>Ol-1</li>
+        <li>Ol-2</li>
+        <li>Ol-3</li>
+        <li>Ol-4</li>
+        <li>Ol-5</li>
+        <li>Ol-6</li>
+        <li>Ol-7</li>
+    </ol>
+
+    <ul>
+        <li>UL-1</li>
+        <li>UL-2</li>
+        <li>UL-3</li>
+    </ul>
+    <input id="matrouh" disabled type="text"/><br/><br/><br/>
+    <input type="password" /><br /><br /><br />
+    <input type="text" /><br /><br /><br />
+    <select>
+        <option value="option one"/>Opt One
+        <option value="option Two" />Opt Two
+        <option value="option Three" />Opt Three
+        <option value="option Four" />Opt Four
+    </select>
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</body>
+</html>

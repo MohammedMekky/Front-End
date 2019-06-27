@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JQ/jquery-3.1.1.js"></script>
+    <style>
+        #mydiv{
+            width:500px;
+            height:300px;
+            background-color:lightpink;
+            border:2px solid black;
+        }
+    </style>
+    <script>
+        $(function () {
+            //1- register events for all buttons
+            $("#btnone").click(function () {
+
+                //alert("Button One is Clicked !");
+                $("#mydiv").fadeIn(2000, "", function () {
+
+                    alert("Shape Is Fadded!!")
+                });
+
+            });
+
+
+            $("#btntwo").click(function () {
+
+                //alert("Button two is Clicked !");
+                $("#mydiv").fadeOut(2000);
+            });
+
+
+
+
+            $("#btnthree").click(function () {
+
+                //alert("Button three is Clicked !");
+                $("#mydiv").fadeToggle(2000);
+            });
+
+
+            $("#btnfour").click(function () {
+
+                //alert("Button three is Clicked !");
+                $("#mydiv").fadeTo(2000,0.5);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="FadeIn" id="btnone"/>
+    <input type="button" value="FadeOut" id="btntwo" />
+    <input type="button" value="FadeToogle" id="btnthree" />
+    <input type="button" value="FadeTo" id="btnfour" />
+    <br /><br /><br />
+    <div id="mydiv"></div>
+</body>
+</html>

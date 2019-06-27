@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JQ/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+            //$("li").click(function () {
+            //    $(this).css("background-color", "cyan");
+            //});
+
+            //$("li").on("click", function () {
+            //    $(this).css("background-color", "lightgreen");
+
+            //});
+
+
+            $("li").on({
+                click: function () {
+                    $(this).css("background-color", "yellow");
+                                    },
+                dblclick: function () {
+                    $(this).remove();
+                                        },
+                mouseover: function () {
+                    $(this).css("color", "blue");
+                                        }
+            });
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+
+    </ul>
+</body>
+</html>
+

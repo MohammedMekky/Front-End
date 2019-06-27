@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JQ/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+
+            // empty
+            //$("ul").empty();
+            // remove
+            //$("ul").remove();
+            // detach
+            //$("ul").detach();
+
+            $("li").click(function () {
+
+                alert("User Clicked On " + $(this).text());
+
+            });
+
+            var recoveredelement;
+            $("#removebtn").click(function () {
+                //recoveredelement= $("ul").remove();
+                recoveredelement = $("ul").detach();
+            });
+
+            $("#recoverbtn").click(function () {
+                $("div").append(recoveredelement);
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <!--<input type="button" value="RemoveUsingRemove" id="removebtn"/>
+    <input type="button" value="RecoverAfterRemove" id="recoverbtn" />-->
+    <input type="button" value="RemoveUsingDetach" id="removebtn" />
+    <input type="button" value="RecoverAfterDetach" id="recoverbtn" />
+    <div>
+        <p>Matrouh City</p>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Gallery</li>
+        </ul>
+
+    </div>
+
+    
+    <ol>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Gallery</li>
+    </ol>
+</body>
+</html>
+

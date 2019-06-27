@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JQ/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+            //All Tags of Type p : tag name selector => p
+            //var parray = $("p");
+            //alert(parray.length);
+
+            // Select .... to Do ....
+
+            //1-
+            //$("p").css("color", "red");
+            ////2- 
+            //$("p").css("border", "2px solid black");
+            ////3-
+            //$("p").css("padding", "20px");
+            // equivlant for
+            // function chaining
+
+            //$("p").css("color", "blue").css("border", "2px solid black").css("padding", "20px");
+
+            //object literal
+            //var myobj = {
+            //    "color": "green",
+            //    "border": "3px dashed red",
+            //    "background-color": "lightyellow",
+            //    "padding":"10px"
+            //};
+
+            //$("p").css(myobj);
+
+
+
+
+            //$("p").css({
+            //    "color": "blue",
+            //    "border": "3px solid red",
+            //    "background-color": "lightyellow",
+            //    "padding": "10px"
+            //});
+
+            //$("h1").css({
+            //    "color": "blue",
+            //    "border": "3px solid red",
+            //    "background-color": "lightyellow",
+            //    "padding": "10px"
+            //});
+
+            var mynewobj = {
+                color: "blue",
+                border: "3px solid red",
+                backgroundColor: "lightyellow",
+                padding: "10px"
+            };
+        
+            //$("p").css(mynewobj);
+            //$("h1").css(mynewobj);
+
+            $("p,h1").css(mynewobj).fadeOut(2000).fadeIn(2000).slideUp(2000).slideDown(2000);
+
+           
+
+
+        });
+    </script>
+</head>
+<body>
+    <p>Information Technology Institute</p>
+    <p>Information Technology Institute</p>
+    <p>Information Technology Institute</p>
+    <p>Information Technology Institute</p>
+    <p>Information Technology Institute</p>
+    <p>Information Technology Institute</p>
+    <p>Information Technology Institute</p>
+    <h1>Information Technology Institute Mansoura</h1>
+    <h1>Information Technology Institute Matrouh</h1>
+    <h1>Information Technology Institute Alex</h1>
+</body>
+</html>
+
+

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JQ/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+        //    $("#oncebtn").click(function () {
+        //        alert("Button Once Is Clicked !");
+
+        //    });
+
+            // one
+            $("#oncebtn").one("click", function () {
+                alert("Button Once Is Clicked !");
+            });
+
+
+            var counter = 3;
+            $("#threebtn").click(function () {
+                if (counter <= 0)
+                    {
+                    
+                }
+                else
+                {
+                    alert("Button three Is Clicked !");
+                }
+
+                counter--;
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <input type="button" value="Click Once" id="oncebtn"/>
+    <input type="button" value="Click Three Times" id="threebtn" />
+    <ul>
+        <li>HOme 1</li>
+        <li>HOme 2</li>
+        <li>HOme 3</li>
+        <li>HOme 4</li>
+        <li>HOme 5</li>
+        <li>HOme 6</li>
+    </ul>
+</body>
+</html>

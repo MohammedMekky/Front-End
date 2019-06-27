@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #mainwrapper{
+            width:200px;
+            height:200px;
+            border:2px solid black;
+            text-align:center;
+            margin:10px auto;
+            background-color:lightpink;
+        }
+    </style>
+    <script src="JQ/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+            $("#mybtn").click(function (e) {
+                alert("My Btn Is Clicked !");
+                e.stopPropagation();
+
+            });
+
+            $("#mainwrapper").click(function () {
+                alert("MainWrapper Div  Is Clicked !");
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div id="mainwrapper">
+        <input type="button" id="mybtn" value="click Me !"/>
+    </div>
+</body>
+</html>

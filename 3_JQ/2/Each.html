@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JQ/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+            $("#usertxt").keyup(function () {
+                //1-geeting value of input
+                var userinput = $(this).val();
+                //2- select rows and loop 
+                $("#datatable tr").each(function () {
+                    //3-getting value of first td for current tr
+                    var currentvalue = $(this).children("td:first").text();
+                    if(currentvalue.toLowerCase().indexOf(userinput.toLowerCase())!=-1)
+                    {
+                        $(this).show();
+                    }
+                    else {
+                        $(this).hide();
+                    }
+
+                });
+
+
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="usertxt"/>
+    <table id="datatable">
+        <tr>
+            <td>Mai Mahmoud</td>
+            <td>Dummy Text</td>
+        </tr>
+        <tr>
+            <td>Samar Samy</td>
+            <td>Dummy Text</td>
+        </tr>
+        <tr>
+            <td>Reem Ragab</td>
+            <td>Dummy Text</td>
+        </tr>
+        <tr>
+            <td>Amany Mohamed</td>
+            <td>Dummy Text</td>
+        </tr>
+        <tr>
+            <td>Marwa Ayman</td>
+            <td>Dummy Text</td>
+        </tr>
+        <tr>
+            <td>Mohamed samy</td>
+            <td>Dummy Text</td>
+        </tr>
+
+    </table>
+</body>
+</html>

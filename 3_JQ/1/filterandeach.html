@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JQ/jquery-3.1.1.js"></script>
+    <style>
+    div{
+
+    height:100px;
+    background-color:lightyellow;
+    border:2px solid black;
+    margin:10px;
+    float:left;
+    }
+    </style>
+    <script>
+        
+        $(function () {
+            //1- all divs
+            //alert( $("div").);
+            //$("div").each(function () {
+            //    var targetwidth = $(this).width();
+            //    //alert(targetwidth);
+            //    //if(targetwidth>=100 && targetwidth<=500)
+            //    return targetwidth >= 100 && targetwidth <= 500;
+            //});
+
+         //var resultdivs=   $("div").filter(function () {
+
+         //       return $(this).width() > 100;
+
+         //   });
+            //alert(resultdivs.length);
+
+            //myarr = $("div").filter(function () {
+
+            //    return $(this).width() > 100;
+
+            //});
+
+            //myarr.each(function () {
+            //    elementwidth = $(this).width();
+            //    if(elementwidth>=500)
+            //    {
+            //        $(this).css("background-color", "pink");
+            //    }
+
+            //})
+
+
+            $("div").filter(function () {
+
+                    return $(this).width() > 100;
+
+                }).each(function () {
+                    elementwidth = $(this).width();
+                    if(elementwidth>=500)
+                    {
+                        $(this).css("background-color", "pink");
+                    }
+
+                })
+
+
+
+
+
+            //alert(myarr.length);
+
+
+
+
+            //.css("color", "blue");
+
+
+            /*.each(function () {
+
+                $(this).width = 300;
+
+            });*/
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <div style="width:500px;">Div One</div>
+    <div style="width:50px;">Div Two</div>
+    <div style="width:150px;">Div Three</div>
+</body>
+</html>

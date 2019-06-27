@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JQ/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+            // unprinted keys
+            //$("#txt").keypress(function (e) {
+            //    $("#myspan").text(e.keyCode);
+
+            //});
+
+            //
+            //$("#txt").keyup(function (e) {
+            //    $("#myspan").text(e.keyCode);
+
+            //});
+
+
+            //$("#txt").keydown(function (e) {
+            //    $("#myspan").text(e.keyCode);
+
+            //});
+
+            // preventDefault() // for letters only , exceculde digits
+            //$("#txt").keypress(function (e) {
+            //    if ((e.which >= 48) && (e.which <= 57))
+            //    {
+            //        e.preventDefault();
+            //    }
+            //       // $("#myspan").text(e.keyCode);
+            //});
+
+            //$("#txt").keyup(function (e) {
+            //        if ((e.which >= 48) && (e.which <= 57))
+            //        {
+            //            e.preventDefault();
+            //        }
+            //           // $("#myspan").text(e.keyCode);
+            //    });
+
+            $("#txt").keypress(function (e) {
+                if ((e.which >= 48) && (e.which <= 57)) {
+                    //e.preventDefault();
+                    e.preventDefault();
+                }
+                // $("#myspan").text(e.keyCode);
+            });
+
+
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="txt"/><span id="myspan"></span>
+</body>
+</html>
