@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        /* 1- Declare animation using @keyframes*/
+        /*@keyframes n{
+            from{
+                width:250px;
+            }
+            to{
+                width:400px;
+                height:200px;
+                background-color:lightpink;
+            }
+        }*/
+        @keyframes n {
+            10%{
+                background-color:pink;
+                width:100px;
+                border:5px dashed blue;
+            }
+            20% {
+                background-color: yellow;
+                width: 500px;
+                border: 2px solid brown;
+            }
+            50% {
+                background-color: magenta;
+                width: 150px;
+                height:500px;
+            }
+            70% {
+                background-color: lightblue;
+                width: 800px;
+                
+            }
+            90% {
+                background-color: lightgreen;
+                width: 550px;
+                
+            }
+        }
+
+
+
+        section {
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            margin: 50px auto;
+            background-color:yellow;
+            /* Step number 2  use animation*/
+            -webkit-animation:n;
+            -webkit-animation-duration:2s;
+            -webkit-animation-iteration-count:infinite;
+            /*-webkit-animation-direction:alternate-reverse;*/
+            /*-webkit-animation-direction:alternate;*/
+        }
+    </style>
+</head>
+<body>
+    <section></section>
+</body>
+</html>
