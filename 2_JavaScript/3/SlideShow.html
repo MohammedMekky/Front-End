@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <img src="up/1.jpg" width="300" height="300" id="myimg"/>
+    <br/><br/>
+    <input type="button" value="Start" onclick="startshow();"/>
+    <input type="button" value="Previous" onclick="previousimg();" />
+    <input type="button" value="Next" onclick="nextimg();" />
+    <input type="button" value="Stop" onclick="stopshow();" />
+    <script>
+        // declare image array
+        var imgarr = ["up/1.jpg", "up/2.jpg", "up/3.jpg", "up/4.jpg", "up/5.jpg", "up/6.jpg"];
+        i = 0;
+        function startshow() {
+            t=setInterval("nextimg()", 1000);
+        }
+        function previousimg() {
+            i--;
+            if (i < 0) {
+                i = imgarr.length-1;
+            }
+            myimg.src = imgarr[i];
+        }
+        function nextimg() {
+            i++;
+            if (i >= imgarr.length)
+            {
+                i = 0;
+            }
+           myimg.src= imgarr[i];
+        }
+        function stopshow() {
+            clearInterval(t);
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        // declaring for one dim array
+        var arrone = [1, 2, 3];
+        //alert(arrone);
+        var arrtwo = [4, 5, 6,];
+        // declare 2dim array [array of arrays]
+        var arrthree = [arrone, arrtwo];
+        //alert(arrthree[0][1]);
+        // document.write
+        document.write("<table width='200' height='200' cellspacing='5' cellpadding='5' border='2' bordercolor='red' align='center'>");
+        for (var i = 0; i < arrthree[0].length; i++) {
+            document.write("<tr>");
+            for(var j=0;j<arrthree[1].length;j++)
+            {
+                document.write("<td>"+arrthree[i][j]+"</td>");
+            }document.write("</tr>");
+        }document.write("</table>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

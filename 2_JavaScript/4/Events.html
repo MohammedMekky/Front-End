@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        //function txtonehandeler() {
+        //    alert('hello From Function  FROM  1');//+eman.value );
+        //    //console.log(mybtn);
+
+        //}
+        //function txtonehandeler2() {
+        //    alert('hello From Function  FROM  2' );//+ eman.value);
+        //    //console.log(mybtn);
+
+        //}
+        //function txtonehandeler3() {
+        //    alert('hello From Function  FROM 3 ');// + eman.value);
+        //    //console.log(mybtn);
+
+        //}
+        //function txtonehandeler4() {
+        //    alert('hello From Function  FROM 4');// + eman.value);
+        //    //console.log(mybtn);
+
+        //}
+
+        //2- register event in script
+        
+        //function doitfirst() {
+        //    mybtn = document.getElementById("mybtn");
+        //    mybtn.onclick = myfun;
+        //}
+
+
+        //function myfun () { alert('hello'); }
+
+
+        //3- register using addEventListener
+
+        window.addEventListener("load", doitfirst);
+
+        function doitfirst() {
+            temp = document.getElementById('mybtn');
+            temp.addEventListener("click", myfunc);
+        }
+
+        function myfunc() {
+            alert("From My Fun");
+        }
+
+
+
+
+    </script>
+</head>
+<!--<body onload="doitfirst();">-->
+<body>
+    <!--<input type="button" onclick="alert('hello');" id="mybtn" value="ClickMe"/>-->
+    <input type="button" id="mybtn" value="ClickMe Button 1" /><br/>
+    <!--<input type="button" onclick="txtonehandeler2()" id="mybtn" value="ClickMe Button 2" /><br/>
+    <input type="button" onclick="txtonehandeler3()" id="mybtn" value="ClickMe Button 3" /><br/>
+    <input type="button" onclick="txtonehandeler4()" id="mybtn" value="ClickMe Button 4" /><br/>-->
+</body>
+</html>

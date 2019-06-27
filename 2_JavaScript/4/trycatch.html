@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        x = prompt("Enter First Number", "");
+        y = prompt("enter Second Number", "");
+        try{
+            if (y == 0)
+            {
+                y = 1;
+                throw Error("Divid By Zero");
+            }
+        }
+        catch(ex)
+        {
+            console.log(ex);
+        }
+        z = parseInt( x) / parseInt( y);
+        z += 20;
+        console.log(z);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

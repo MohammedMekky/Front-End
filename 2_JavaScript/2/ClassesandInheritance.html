@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        function pointprinter () { alert(this.x + ' , ' + this.y); }
+
+        function Point()
+        {
+            this.x = parseInt(prompt("enter x"));
+            this.y = parseInt(prompt("enter y"));
+            this.print= pointprinter;
+        }
+
+        function Rect()
+        {
+            this.UL = new Point();
+            this.LR = new Point();
+            this.print = function () { this.UL.print(); this.LR.print(); }//alert( "Rect UL Coords = "+ this.UL.x + ' , ' + this.UL.y + " -------  LR Coords = "+this.LR.x + ' , '+this.LR.y)  };
+        }
+
+        function Square()
+        {
+            //this.UL = new Point();
+            //this.LR = new Point();
+            //this.print = function () { alert("Square UL Coords = " + this.UL.x + ' , ' + this.UL.y + " -------  LR Coords = " + this.LR.x + ' , ' + this.LR.y) };
+        }
+
+
+        Square.prototype = new Rect;// prototype inheritance
+        var sqone = new Square();
+        //sqone.UL.x = 100;
+        //sqone.UL.y = -100;
+        sqone.print();
+        
+
+        //var sqone = new Rect();
+        //sqone.print();
+
+        //var rectone = new Rect();
+        //rectone.UL.x = 10;
+        //rectone.UL.y = 10;
+
+        //rectone.LR.x = 100;
+        //rectone.LR.y = 100;
+
+        //rectone.print();
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

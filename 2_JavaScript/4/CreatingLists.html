@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        p{
+            border:2px solid black;
+            padding:10px;
+            text-align:center;
+            width:500px;
+            margin:10px auto;
+        }
+        .odd{
+            background-color:lightpink;
+        }
+        .even{
+            background-color:lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var myarr = ["Ahmed", "Mohamed", "Ali", "Mai", "Mariam"];
+        var mydiv = document.createElement("div");
+        for (var i = 0; i < myarr.length; i++) {
+            mypara = document.createElement("p");
+            mypara.innerText = myarr[i];
+
+
+
+            mypara.style.border = "2px solid black";
+            mypara.style.margin = 5;
+            if (i % 2 == 0)
+            {
+                mypara.className = "even";
+            }
+            else {
+                mypara.className = "odd";
+            }
+
+            //mypara.style.backgroundColor = "lightyellow";
+
+
+
+            //if(i%2==0){
+            //mypara.style.border = "2px solid black";
+            //mypara.style.margin = 5;
+            //mypara.style.backgroundColor = "lightyellow";
+            //}
+            //if (i % 2 != 0) {
+            //    mypara.style.border = "2px solid black";
+            //    mypara.style.margin = 5;
+            //    mypara.style.backgroundColor = "lightcyan";
+            //}
+            mydiv.appendChild(mypara);
+        }
+        document.body.appendChild(mydiv);
+        /*
+            <div>
+                    <p>Ahmed</p>
+                    <p>Mohamed</p>
+                    <p>Ali</p>
+                    <p>Mai</p>
+                    <p>Mariam</p>
+            </div>
+        */
+    </script>
+</body>
+</html>

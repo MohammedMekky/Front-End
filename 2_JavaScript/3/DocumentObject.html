@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+
+        DocumentObject
+    </title>
+    <script>
+        //function changebgcolor() {
+        //    document.bgColor='cyan';
+        //}
+        //function changeTitle() {
+        //    document.title = "Hello Matrouh";
+        //}
+
+        setInterval("settitle()", 1000);
+        function settitle() {
+            var mydate = new Date();
+          document.title= mydate.toLocaleTimeString();
+        }
+    </script>
+</head>
+<body>
+    <!--<input type="button" onclick="changebgcolor();" value="changeBackGround"/>-->
+    <!--<input type="button" onclick="changeTitle();" value="changeBackGround" />-->
+
+</body>
+</html>

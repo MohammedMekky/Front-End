@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        //alert('Hello Matrouh');
+        //setInterval("alert('Hello Matrouh');", 2000);
+        //setTimeout("alert('Hello Matrouh');", 2000);
+        //var currentdate = new Date();
+        
+        //mytxt.value = currentdate;
+        //function starttimer() {
+
+        //}
+        //function stoptimer() {
+
+        //}
+    </script>
+</head>
+<body>
+    <input type="button" value="start" onclick="starttime();"/><br/><br />
+    <input type="button" value="stop" onclick="stoptimer();" /><br /><br />
+    <input type="text" id="mytxt"/>
+    <script>
+        //var currentdate = new Date();
+
+        //mytxt.value = currentdate.toLocaleTimeString();
+        //setInterval("mytxt.value = currentdate.toLocaleTimeString()", 1000);
+        function starttime()
+        {
+            t=setInterval("starttimer()", 1000);
+        }
+        function starttimer() {
+            var currentdate = new Date();
+            mytxt.value = currentdate.toLocaleTimeString();
+        }
+        function stoptimer() {
+            clearInterval(t);
+        }
+    </script>
+</body>
+</html>

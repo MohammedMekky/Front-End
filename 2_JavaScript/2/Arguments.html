@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        function sum()
+        {
+            var temp = 0;
+            //document.write(arguments.length);
+            if(arguments.length > 0)
+            {
+                for (var i = 0; i < arguments.length; i++) {
+                    temp += arguments[i];
+                }
+            }
+
+            return temp;
+        }
+      alert( sum(1, 2, 3, 4, 5));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

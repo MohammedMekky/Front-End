@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        //window.addEventListener("")
+        //window.addEventListener("click", doitfirst);
+        //function doitfirst() {
+        //    document.body.style.backgroundColor = "red";
+        //}
+        window.addEventListener('mousedown', mynewfun);
+        function mynewfun(event) {
+            //console.log(event);
+            //alert(event);
+            //alert("fun new fun");
+            //document.body.style.backgroundColor = "lightyellow";
+            //alert(event.which);
+            //if(event.which==1)
+            //{
+            //    document.body.style.backgroundColor = "lightyellow";
+            //}
+            //else
+            //{
+            //    document.body.style.backgroundColor = "lightpink";
+            //}
+            if (event.which == 1)
+            {
+                document.body.style.backgroundColor = "lightpink";
+            }
+            if(event.which==3)
+            {
+                alert("You can't Click Right !");
+            }
+
+            
+        }
+        window.oncontextmenu = function() {
+            return false;
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #divone{
+            width:500px;
+            height:500px;
+            border:2px solid black;
+            padding:10px;
+            margin:10px auto;
+            text-align:center;
+            background-color:lightyellow;
+        }
+        #divtwo {
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px auto;
+            text-align: center;
+            background-color: lightpink;
+        }
+    </style>
+    <script>
+        function divonehandeler() {
+            alert("Div One is Clicked !");
+        }
+        
+        function divtwohandeler(event) {
+            event = event || window.event;
+            //console.log(event);
+            alert("Div TWo is Clicked !");
+            event.cancelBubble = true;
+            //event.cancelBubble = false;
+        }
+    </script>
+</head>
+<body>
+    <div id="divone" onclick="divonehandeler();">
+        <div id="divtwo" onclick="divtwohandeler();">
+
+        </div>
+    </div>
+</body>
+</html>

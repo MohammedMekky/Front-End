@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        // calling for alert [member within Window Object]
+        //window.alert("Hello Alerted text Using Window prefix");
+        //alert("Hello Alerted text Using Window prefix");
+
+        // user defined function
+
+        //function dosomthing() {
+        //    alert("From Do SomThing");
+        //}
+        //window.dosomthing();
+
+        //var myobject = {
+        //    print: function () { }
+        //}
+
+        function openchildfun() {
+            // open popup contains childwindow.html
+            //open("URL","OpenedWindowName","Furniture Attibutes");
+          openedchiled = open("childwindow.html", "Matrouh", "width=300,height=400");
+        }
+        function closechildfun() {
+            //- window.close();
+            if (openedchiled.closed)
+            {
+                alert("child window is closed");
+            }
+            else
+            openedchiled.close();
+        }
+        function resizefun() {
+            openedchiled.resizeBy(20, 20);
+        }
+        function scrollfun() {
+            openedchiled.scrollBy(0,20);
+        }
+        function printfun() {
+            window.print();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="open child" onclick="openchildfun();"/>
+    <!--<input type="button" value="close child" onclick="closechildfun();" />-->
+    <input type="button" value="Resize" onclick="resizefun();"/><br/>
+    <input type="button" value="Scroll" onclick="scrollfun();"/><br/>
+    <input type="button" value="Print" onclick="printfun();" /><br />
+</body>
+</html>

@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <!--<select id="myselect">
+
+    </select>-->
+
+    <script>
+        //alert(document.getElementById("myselect"));
+        //1- create select object
+            //var myselect = new HTMLSelectElement();//illigal constructor
+        myselect = document.createElement("select");
+       // myselect.multiple = true;
+        //console.log(myselect);
+
+        //2- create option tag
+        optone = document.createElement("option");
+        optone.value = "HTML";
+        optone.innerText = "Hyper Text Markup Language";
+
+        //Memory View
+        /*
+            <select></select>
+            <option value="HTML">Hyper Text Markup Language</option>
+
+            =>
+            <select>
+                <option value="HTML">Hyper Text Markup Language</option>
+            </select>
+            
+
+        */
+        // 3- create another option
+        opttwo = document.createElement("option");
+        opttwo.value = "XML";
+        opttwo.innerText = "Extensible Markup Language";
+
+        optthree = document.createElement("option");
+        optthree.value = "XML";
+        optthree.innerText = "Extensible Markup Language";
+
+
+
+        optfour = document.createElement("option");
+        optfour.value = "XML";
+        optfour.innerText = "Extensible Markup Language";
+
+        optfive = document.createElement("option");
+        optfive.value = "XML";
+        optfive.innerText = "Extensible Markup Language";
+
+
+        opttwo = document.createElement("option");
+        opttwo.value = "XML";
+        opttwo.innerText = "Extensible Markup Language";
+
+
+        /*
+            <select></select>
+            <option value="HTML">Hyper Text Markup Language</option>
+            <option value="XML">Extensible Markup Language</option>
+        */
+
+        //3-Add options within Select Object
+
+        //alert(myselect.options.length);
+        myselect.options.add(optone);
+        myselect.options.add(opttwo);
+        myselect.options.add(optthree);
+        myselect.options.add(optfour);
+        myselect.options.add(optfive);
+        /*
+        <select>
+        
+            <option value="HTML">Hyper Text Markup Language</option>
+            <option value="XML">Extensible Markup Language</option>
+        
+        </select>
+          
+          
+        
+          
+
+        */
+        // final step
+        // add selectobject within body object
+
+        document.body.appendChild(myselect);
+
+
+        //alert(myselect.options.length);
+
+        //console.log(myselect);
+        //console.log(optone);
+
+    </script>
+</body>
+
+</html>

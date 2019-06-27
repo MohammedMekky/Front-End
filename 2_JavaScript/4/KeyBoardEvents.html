@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        window.addEventListener("keydown", checkkeys);
+        function checkkeys(mydata) {
+            //alert(mydata.keyCode);
+            switch(mydata.keyCode)
+            {
+                case 38:
+                    document.body.style.backgroundColor = 'red';
+                    break;
+                case 40:
+                    document.body.style.backgroundColor = 'green';
+                    break;
+                case 37:
+                    document.body.style.backgroundColor = 'cyan';
+                    break;
+                case 39:
+                    document.body.style.backgroundColor = 'orange';
+                    break;
+
+            }
+        }
+    </script>
+</head>
+<body >
+    
+</body>
+</html>

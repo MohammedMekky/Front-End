@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        // to declare date object
+        //1- var today = new Date();
+        //var today = new Date();
+        //document.write(today);
+
+        // declare object from Date Type using User Values
+        //var birthday = new Date(2020, 1, 10,2,30,20);
+        //document.write(birthday);
+
+
+        // dealing with Date Functions
+        var mydate=new Date();
+        // getters
+        document.write("<br/><b>Date Getters</b><br/>");
+        document.write("1- Full Date" + mydate+ "  <br/>");
+        document.write("2- Get Date " + mydate.getDate() + "  <br/>");
+        document.write("3- Get Day " + mydate.getDay() + "  <br/>");
+        document.write("4- Get Full Year " + mydate.getFullYear() + "  <br/>");
+
+        // setters
+        document.write("<br/><b>Date Setters</b><br/>");
+        mydate.setFullYear(mydate.getFullYear() + 1);
+        document.write("1- Get Full Year " + mydate.getFullYear() + "  <br/>");
+        //To
+        document.write("<br/><b>Date ToFunctions</b><br/>");
+        document.write("Local Date " + mydate.toLocaleDateString() + "  <br/>");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

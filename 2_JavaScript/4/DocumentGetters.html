@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <img name="iti" src="up/1.jpg" id="myimg" />
+    <img name="iti" src="up/2.jpg" />
+    <img src="up/3.jpg" />
+    <img name="iti" src="up/4.jpg" />
+    <img name="iti" src="up/5.jpg" />
+    <script>
+        //imgone = document.getElementById("myimg");
+        
+        //alert(imgone.width);
+        //imgone.src = "up/10.jpg";
+
+       // getElementsByTagName
+
+       //var myimgs= document.getElementsByTagName("img");// return all images
+       ////alert(myimgs.length);
+       //for (var i = 0; i < myimgs.length; i++) {
+       //    myimgs[i].width = 200;
+       //    myimgs[i].height = 100;
+       //}
+
+        //myimgs = document.getElementsByName("iti");
+        //alert(myimgs.length);
+        //for (var i = 0; i < myimgs.length; i++) {
+        //    myimgs[i].width = 200;
+        //    myimgs[i].height = 100;
+        //}
+
+        // using collection of images
+        //firstimg = document.images[0];
+        //alert(firstimg.src);
+
+
+        //var allimgs = document.images;
+
+
+        for (var i = 0; i < document.images.length; i++) {
+            document.images[i].width = 100;
+            document.images[i].height= 100;
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

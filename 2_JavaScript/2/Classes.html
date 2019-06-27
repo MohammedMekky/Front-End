@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+       <script>
+           function Student()
+           {
+               this.name = "Nasr";
+               this.id = 1;
+               this.print = function () {
+                   alert(this.name + ' ,  ' + this.id);
+               };
+           }
+
+           var std = new Student();
+           //alert(typeof(std));
+           //alert(std.name);
+           std.id = 200;
+           std.name = "Ali Kassem";
+           std.print();
+
+           var stdtwo = new Student();
+           stdtwo.print();
+
+       </script>
+</head>
+<body>
+
+</body>
+</html>

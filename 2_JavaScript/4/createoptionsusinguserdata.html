@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <input type="text" id="mytxt"/>
+    <input type="button" value="Add option" onclick="addoptionfun();"/>
+    <script>
+        myselect = document.createElement("select");
+        function addoptionfun() {
+            
+            //1- get input
+            mytxt = document.getElementById("mytxt");
+            //2- getvalue from input
+            txtval = mytxt.value;
+            // 3- create select
+            //myselect = document.createElement("select");
+            //4- create option
+            optone = document.createElement("option");
+            optone.innerText = txtval;
+            //5- add option in select
+            myselect.options.add(optone);
+            //6- add select in body
+            document.body.appendChild(myselect);
+        }
+    </script>
+</body>
+</html>

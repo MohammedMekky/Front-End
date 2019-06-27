@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        div{
+            width:500px;
+            height:500px;
+            border:2px solid black;
+            background-color:lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="mytxt"/><br /><br />
+    <input type="button" value="Preview" onclick="previewfun();"/>
+    <br /><br />
+    <div id="result">
+
+    </div>
+    <script>
+        function previewfun() {
+            //1- getting input type text
+            mytxt = document.getElementById("mytxt");
+            //2- getting div
+            result = document.getElementById("result");
+            result.innerHTML += mytxt.value+"<br/>";
+        }
+    </script>
+</body>
+</html>
